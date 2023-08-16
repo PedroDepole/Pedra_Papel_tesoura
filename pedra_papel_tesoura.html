@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        
+    </style>
+<body>
+    
+ 
+
+    <script>
+
+                
+        let jogo = prompt('Digite seu jogo')
+        let random = Math.random()
+            if(jogo != '' || jogo != null || jogo != undefined) {
+                if(jogo === 'tesoura' && random <= 0.33) {
+                    alert('empate')
+                }else if(jogo === 'tesoura' && random <= 0.66) {
+                    alert('perdeu')
+                }else if(jogo === 'tesoura' && random <= 0.99) {
+                    alert('ganhou')
+                }else if(jogo === 'pedra' && random <= 0.33) {
+                    alert('ganhou')
+                }else if(jogo === 'pedra' && random <= 0.66) {
+                    alert('empate')
+                }else if(jogo === 'pedra' && random <= 0.99) {
+                    alert('perdeu')
+                }else if(jogo === 'papel' && random <= 0.33) {
+                    alert('perdeu')
+                }else if(jogo === 'papel' && random <= 0.66) {
+                    alert('ganhou')
+                }else if(jogo === 'papel' && random <= 0.99) {
+                    alert('empate')
+                }
+            }
+                
+                if(jogo == null || jogo == '' || jogo == undefined) {
+                    alert('Digite Pedra, Papel ou Tesoura')
+                }else {
+                    if(random <= 0.33) {
+                    alert('tesoura')
+                    } else if(random <= 0.66) {
+                    alert('pedra')
+                    }else {
+                    alert('papel')
+                    }
+                }
+
+    </script>
+</body>
+</html>
